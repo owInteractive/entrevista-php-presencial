@@ -20,6 +20,8 @@
  * 6 - Não deverá ser permitido salvar um CEP já existente
  * 7 - Ao incluir um novo CEP na base, ao preencher novamente no formulário deverá trazer os dados salvos (autocomplete)
  *
+ * CEP para teste - 14010-070
+ *
  * O que será avaliado:
  *   - Lógica de programação
  *   - Clareza na resolução do problema
