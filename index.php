@@ -1,17 +1,28 @@
 <?php
-
 /**
- * O objetivo desse desafio é se conectar ao banco de dados e mostrar os dados em forma de um relacionamento
- * entre estado e cidade, você é livre para fazer como quiser mas deve ser usado apenas PHP puro,
- * pesquisa na internet são livres.
+ * Requisitos:
+ *  - Utilizar PHP puro (7.3)
+ *  - Javascript (Puro, Jquery, Vue ou de sua preferência)
+ *  - HTML, CSS.
  *
- * O Resultado deve ser o seguinte, ordernado por ordem alfabetica tanto os estados quanto a cidades
- * Estado
- * - Cidade
- * - Cidade [...]
- * Estado
- * - Cidade
- * - Cidade [...]
+ * Tarefa:
+ * 1 - Criar um formulário em HTML com os dados:
+ *   - CEP (text com máscara)
+ *     Logradouro (text)
+ *     Número (text)
+ *     Bairro (text)
+ *     Estado (select com os dados do banco)
+ *     Cidade (select com os dados do banco)
+ * 2 - Ao preencher o campo CEP o sistema deverá autocomplentar os dados (utilizando o banco de dados local, não é permitido utilizar um webservice ou api pronta)
+ * 3 - Para os CEP's xxxx yyyy yyyy não será retornado nenhum resultado, nesse caso o usuário poderá preencher as informações e ao clicar em salvar deverá incluir esse novo CEP na base de dados
+ * 4 - O campo estado e cidade deverão estar interligados, ou seja, ao selecionar o estado deverá filtrar as cidades correspondentes
+ * 5 - O campo cidade e estado deverão ser trazidos em ordem alfabética
+ * 6 - Não deverá ser permitido salvar um CEP já existente
+ * 7 - Ao incluir um novo CEP na base, ao preencher novamente no formulário deverá trazer os dados salvos (autocomplete)
+ *
+ * O que será avaliado:
+ *   - Lógica de programação
+ *   - Clareza na resolução do problema
  */
 $link = mysqli_connect('0.0.0.0:33060', 'root', 'secret', 'entrevista');
 
