@@ -1,0 +1,7 @@
+mysql
+HOST=0.0.0.0:33060
+BASE=entrevista
+USUARIO=root
+SENHA=secret
+
+docker run --name mariadb_local -e MYSQL_ROOT_PASSWORD=secret -d -v mysql:/var/lib/mysql -p 33060:3306 mariadb/server:latest
